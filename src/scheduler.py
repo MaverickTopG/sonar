@@ -66,6 +66,7 @@ algo_map = {
 
 def get_node(config: dict, rank) -> BaseNode:
     algo_name = config["algo"]
+    # Scheduler dispatch is operationally sensitive because rank 0 selects the server path.
     return algo_map[algo_name][rank > 0](config)
   
 class Scheduler():
