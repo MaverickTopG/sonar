@@ -22,10 +22,8 @@ class CommUtils:
         Wait for a signal from a source node
         """
         if tag is not None:
-            recv_data = self.comm.recv(source=src, tag=tag)
-        else:
-            recv_data = self.comm.recv(source=src)
-        return recv_data
+            return self.comm.recv(source=src, tag=tag)
+        return self.comm.recv(source=src)
 
     def wait_for_all_clients(self, client_ids, tag=None):
         """ """
