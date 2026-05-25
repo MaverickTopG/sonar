@@ -160,8 +160,9 @@ class LogUtils:
         Initialize directory for saving numpy arrays.
         """
         npy_path = f"{self.log_dir}/npy"
-        if not os.path.exists(npy_path) or not os.path.isdir(npy_path):
-            os.makedirs(npy_path)
+        if os.path.isdir(npy_path):
+            return
+        os.makedirs(npy_path)
 
     def log_summary(self, text):
         """
