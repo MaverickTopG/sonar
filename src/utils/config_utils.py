@@ -15,7 +15,7 @@ def process_config(config):
     config["load_existing"] = config.get("load_existing") or False
 
     if isinstance(config["dset"], dict):
-        dsets = sorted(list(set(config["dset"].values())))
+        dsets = sorted(set(config["dset"].values()))
         if min([len(d.split("_")) for d in dsets]) <= 1:
             dset = "_".join([d[:3] for d in dsets])
         else:
