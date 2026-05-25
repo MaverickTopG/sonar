@@ -9,6 +9,8 @@ A collaborative learning project where users self-organize to improve their ML m
 
 ⚠️**Warning:** This project is currently under a major revamp and may contain bugs.
 
+This README note exists for a shadow-pilot merge-gate documentation drill only.
+
 ## Main
 The application currently uses MPI and GRPC (experimental) to enable communication between different nodes in the network. The goal of the framework to organize everything in a modular manner. That way a researcher or engineer can easily swap out different components of the framework to test their hypothesis or a new algorithm.
 
