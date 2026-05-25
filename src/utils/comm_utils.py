@@ -8,14 +8,15 @@ class CommUtils:
         self.size = self.comm.Get_size()
 
     def send_signal(self, dest, data, tag=None):
-        if tag is not None:
-            self.comm.send(data, dest=dest, tag=tag)
-        else:
+        if tag is None:
             self.comm.send(data, dest=dest)
+            return
+        self.comm.send(data, dest=dest, tag=tag)
 
     def send_signal_to_all_clients(self, client_ids, data, tag=None):
+        broadcast_tag = tag
         for client_id in client_ids:
-            self.send_signal(client_id, data, tag=tag)
+            self.send_signal(client_id, data, tag=broadcast_tag)
 
     def wait_for_signal(self, src, tag=None):
         """
