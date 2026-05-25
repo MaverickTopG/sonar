@@ -6,6 +6,7 @@
 [![Documentation Status](https://readthedocs.org/projects/markdown-guide/badge/?version=latest)](https://aidecentralized.github.io/sonar/)
 
 A collaborative learning project where users self-organize to improve their ML models by sharing representations of their data or model.
+The repository currently includes experimental MPI and GRPC coordination paths that should be treated as operationally sensitive during review.
 
 ⚠️**Warning:** This project is currently under a major revamp and may contain bugs.
 
