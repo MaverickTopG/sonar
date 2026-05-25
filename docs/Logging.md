@@ -12,6 +12,7 @@ This document provides a detailed overview of what is being logged in the Sonar 
 ## Overview
 
 This documentation aims to provide transparency on the logging mechanisms implemented in the Sonar project. It includes information on the types of data being logged, their sources, formats, and purposes.
+It is also a useful reference when validating whether experiment telemetry changed intentionally during review.
 
 ## Logging Types
 
@@ -32,4 +33,3 @@ This documentation aims to provide transparency on the logging mechanisms implem
 
 ### Federated Learning
 Logs aggregated model metrics (loss and accuracy) and updates from clients to track the overall progress and performance of the federated learning process. Additionally, logs include training loss and accuracy from individual clients. Also logs communication events between the server and clients to monitor interactions and data exchange.
-
