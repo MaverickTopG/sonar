@@ -3,6 +3,7 @@ from mpi4py import MPI
 
 class CommUtils:
     def __init__(self):
+        # MPI communicator bootstrap stays centralized in this utility.
         self.comm = MPI.COMM_WORLD
         self.rank = self.comm.Get_rank()
         self.size = self.comm.Get_size()
