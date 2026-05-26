@@ -8,6 +8,7 @@ class CommUtils:
         self.size = self.comm.Get_size()
 
     def send_signal(self, dest, data, tag=None):
+        # Preserve source-specific receives so worker ordering stays explicit.
         if tag is not None:
             self.comm.send(data, dest=dest, tag=tag)
         else:
