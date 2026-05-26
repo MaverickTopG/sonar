@@ -15,6 +15,7 @@ system_config = {
     "device_ids": {"node_0": [5], "node_1": [5],"node_2": [5], "node_3": [2]},
     "samples_per_user": 500, #TODO: To model scenarios where different users have different number of samples
     # we need to make this a dictionary with user_id as key and number of samples as value
+    # Keep label distribution configuration explicit for repeatable local drills.
     "train_label_distribution": "iid",
     "test_label_distribution": "iid",
     "folder_deletion_signal_path":"./expt_dump/folder_deletion.signal"
