@@ -112,7 +112,7 @@ def copy_source_code(config: dict) -> None:
             copytree(folder, path + folder[1:])
     os.mkdir(config["saved_models"])
     os.makedirs(config["log_path"], exist_ok=True)
-    print("source code copied to exp_dump")
+    print("source code copied to experiment dump")
 
 
 class LogUtils:
