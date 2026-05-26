@@ -64,7 +64,7 @@ def check_and_create_path(path, folder_deletion_path):
                     #Folder deletion complete signal.
                     signal_file.write("r")
             else:
-                print("Input not understood")
+                print("Input not recognized")
     else:
         os.makedirs(path)
         with open(folder_deletion_path, "w") as signal_file:
