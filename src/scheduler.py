@@ -1,6 +1,6 @@
 # scheduler.py
 """
-This module manages the orchestration of federated learning experiments.
+This module coordinates the orchestration of federated learning experiments.
 """
 
 import os
