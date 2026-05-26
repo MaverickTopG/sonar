@@ -100,7 +100,7 @@ class Scheduler():
         random.seed(seed)
         numpy.random.seed(seed)
 
-        if rank == 0:
+        if rank in (0, 1):
             if copy_souce_code:
                 copy_source_code(self.config)
             else:
