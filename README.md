@@ -23,3 +23,6 @@ The application currently uses MPI and GRPC (experimental) to enable communicati
 - [ ] O8: Eliminate the need to add a BaseServer module, keep it backward compatible by instantiating the server as yet another node.
 - [ ] O9: Build testing suite. See https://github.com/aidecentralized/sonar/issues/21
 - [ ] O10: Set up milestones for transition to full API like interface and then launch on `pip`
+
+
+- Valley Forge semantic drill note: no runtime behavior change.
