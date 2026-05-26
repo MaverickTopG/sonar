@@ -31,6 +31,6 @@ class CommUtils:
         """ """
         data_list = []
         for client_id in client_ids:
-            data = self.wait_for_signal(client_id, tag=tag)
-            data_list.append(data)
+            received = self.wait_for_signal(client_id, tag=tag)
+            data_list.append(received)
         return data_list
