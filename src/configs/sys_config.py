@@ -7,7 +7,7 @@ system_config = {
     "dset": "cifar10",
     "dump_dir": "./expt_dump/",
     "dpath": "./datasets/imgs/cifar10/",
-    "seed": 2,
+    "seed": 3,
     # node_0 is a server currently
     # The device_ids dictionary depicts the GPUs on which the nodes reside.
     # For a single-GPU environment, the config will look as follows (as it follows a 0-based indexing):
