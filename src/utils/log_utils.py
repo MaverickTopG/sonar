@@ -193,7 +193,7 @@ class LogUtils:
         Args:
             msg (str): Message to log.
         """
-        logging.info(msg)
+        logging.debug(msg)
 
     def log_tb(self, key, value, iteration):
         """
