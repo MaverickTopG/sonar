@@ -1,6 +1,6 @@
 # Logging Documentation
 
-This document provides a detailed overview of what is being logged in the Sonar setup. 
+This document provides a detailed overview of what is being logged in the Sonar training setup. 
 
 ## Table of Contents
 
