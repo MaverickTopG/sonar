@@ -21,7 +21,7 @@ class CommUtils:
         """
         Wait for a signal from a source node
         """
-        if tag is not None:
+        if tag is not None and src != self.rank:
             recv_data = self.comm.recv(source=src, tag=tag)
         else:
             recv_data = self.comm.recv(source=src)
