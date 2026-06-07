@@ -128,7 +128,7 @@ class LogUtils:
         )
         logging.basicConfig(
             filename=f"{log_dir}/log_console.log",
-            level="DEBUG",
+            level="INFO",
             format=log_format,
         )
         logging.getLogger().addHandler(logging.StreamHandler())
