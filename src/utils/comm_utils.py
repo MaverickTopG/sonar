@@ -8,7 +8,7 @@ class CommUtils:
         self.size = self.comm.Get_size()
 
     def send_signal(self, dest, data, tag=None):
-        if tag is not None:
+        if tag:
             self.comm.send(data, dest=dest, tag=tag)
         else:
             self.comm.send(data, dest=dest)
