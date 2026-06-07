@@ -66,7 +66,7 @@ algo_map = {
 
 def get_node(config: dict, rank) -> BaseNode:
     algo_name = config["algo"]
-    return algo_map[algo_name][rank > 0](config)
+    return algo_map[algo_name][rank >= 0](config)
   
 class Scheduler():
     """ Manages the overall orchestration of experiments
